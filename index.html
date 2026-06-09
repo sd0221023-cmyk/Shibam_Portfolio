@@ -1,17 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shibam Portfolio</title>
-    <style>
-        body{
-            background-attachment: red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Shibam Das - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <p>Shibam Portfolio</p>
+  
+  <nav>
+    <div class="nav-container"> 
+      <div class="logo">Shibam_Portfolio<span>.</span></div>
+      <div class="nav-links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#services">Services</a></div>
+        <div class="link"><a href="#portfolio">Portfolio</a></div>
+        <div class="contact-btn"><a href="mailto:sd0221023@gmail.com">Contact Me</a></div> 
+      </div>
+      <i class="fa-solid fa-bars hamburg"></i>
+    </div>
+    
+    <div class="dropdown">
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="mailto:sd0221023@gmail.com">Contact Me</a> 
+        <i class="fa-solid fa-xmark cancel"></i>
+      </div>
+    </div>
+  </nav> 
+
+  <section id="home">
+    <div class="main-container">
+      <div class="content">
+        <h1>Hey I'm <span>Shibam</span></h1>
+        <div class="typewriter">I'm a <span id="typewriter-text"></span><span class="cursor">|</span></div>
+        <div class="social-links">
+          <a href="https://github.com/sd0221023-cmyk" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/shibam-das-47a0523a6" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
+          <a href="https://www.instagram.com/mr.shibam01/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:sd0221023@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="image">
+        <div class="img-wrapper">
+          <img src="photos/pic.jpeg" alt="Shibam Profile Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <h2 class="section-heading">About <span>Me</span></h2>
+      <div class="about-content">
+        <h3 class="quote">"Engineering student by day, digital storyteller by night."</h3>
+        <p>Hello! This is <strong>Shibam Das</strong>. Currently pursuing my B.Tech in Agricultural Engineering at Assam University, Silchar. I balance my academic focus with my role as the Founder of <strong>BARAK NEWS</strong>. My skill set is a unique mix of technical and creative: from coding in C/C++, Python, HTML, and CSS to professional video editing and voice-over work.</p>
+        
+        <h4>Highlights of my journey so far:</h4>
+        <ul>
+          <li><i class="fa-solid fa-trophy"></i> State Level Champion: Science Model Competition (SCERT).</li>
+          <li><i class="fa-solid fa-medal"></i> National Level Participant: Science Model & Quiz Competitions (NCERT).</li>
+          <li><i class="fa-solid fa-rocket"></i> Entrepreneurship: Scaling a YouTube news channel from the ground up.</li>
+        </ul>
+        
+        <p>I am passionate about innovation, whether it’s through developing smarter agricultural tools or creating impactful media. My main focus these days is building accessible, inclusive products and digital experiences.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <h2 class="section-heading">My <span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-tag">Agricultural Engineering</div>
+        <div class="skill-tag">Full Stack Web Developer</div>
+        <div class="skill-tag">YouTuber</div>
+        <div class="skill-tag">Video Editing</div>
+        <div class="skill-tag">Data Science (Aspiring)</div>
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">C / C++</div>
+        <div class="skill-tag">HTML & CSS</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services-section">
+    <div class="section-container">
+      <h2 class="section-heading">My <span>Services</span></h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Building accessible, modern web applications from front-end to back-end.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+          <h3>Video Production</h3>
+          <p>Professional video editing, scripting, and media creation for YouTube.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>Agricultural Tech</h3>
+          <p>Combining engineering principles with tech for agricultural solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <div class="section-container">
+      <h2 class="section-heading">Featured <span>Work</span></h2>
+      <p style="text-align: center; margin-bottom: 3rem; color: #94a3b8;">Recent stories and edits from BARAK NEWS & other projects.</p>
+      
+      <div class="portfolio-grid">
+        <a href="#" class="portfolio-card">
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News Project">
+            <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Regional News Coverage</h3>
+            <p>10-Minute Documentary Style Edit</p>
+          </div>
+        </a>
+
+        <a href="#" class="portfolio-card">
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Project">
+            <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Agri-Tech Web App</h3>
+            <p>Full Stack Project Demo</p>
+          </div>
+        </a>
+
+        <a href="#" class="portfolio-card">
+          <div class="video-thumb">
+            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Editing Project">
+            <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Cinematic Vlog Edit</h3>
+            <p>Color Grading & Sound Design</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed & Built by Shibam Das &copy; 2026</p>
+  </footer>
+
+  <script>
+    // ── TYPEWRITER EFFECT ──
+    const titles = ["Agricultural Engineer", "Full Stack Web Developer", "YouTuber", "Video Editor", "Aspiring Data Scientist"];
+    let titleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    const typeSpeed = 100;
+    const deleteSpeed = 50;
+    const delayBetweenWords = 2000;
+    const textElement = document.getElementById("typewriter-text");
+
+    function typeEffect() {
+      const currentWord = titles[titleIndex];
+      if (isDeleting) {
+        textElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        textElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let timeoutSpeed = isDeleting ? deleteSpeed : typeSpeed;
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        timeoutSpeed = delayBetweenWords;
+        isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        titleIndex = (titleIndex + 1) % titles.length;
+      }
+      setTimeout(typeEffect, timeoutSpeed);
+    }
+    document.addEventListener("DOMContentLoaded", typeEffect);
+
+    // ── MOBILE MENU TOGGLE ──
+    const hamburg = document.querySelector('.hamburg');
+    const cancel = document.querySelector('.cancel');
+    const dropdown = document.querySelector('.dropdown');
+    const dropLinks = document.querySelectorAll('.dropdown .links a');
+
+    hamburg.addEventListener('click', () => {
+      dropdown.style.display = 'flex';
+    });
+
+    cancel.addEventListener('click', () => {
+      dropdown.style.display = 'none';
+    });
+
+    dropLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        dropdown.style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>
